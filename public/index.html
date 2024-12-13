@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Responsive Website</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="menu-icon">☰</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contents">Contents</a>
+            <a href="#courses">Courses</a>
+        </div>
+    </nav>
+
+    <section id="home">
+        <h1>Gbenga</h1>
+        <p>Hello Guys, My name is Gbenga, I'm a software developer interested in improving Tech</p>
+    </section>
+
+    <section id="about">
+        <h1>About Us</h1>
+        <p>We are dedicated to providing high-quality education and resources to help you succeed in your career.</p>
+    </section>
+
+    <section id="contents">
+        <h1>Contents</h1>
+        <p>Explore our wide range of educational materials and resources.</p>
+    </section>
+
+    <section id="courses">
+        <h1>Our Courses</h1>
+        <div class="course-grid">
+            <div class="course-card">
+                <h2>Web Development</h2>
+                <p>Learn modern web development techniques and tools.</p>
+            </div>
+            <div class="course-card">
+                <h2>Data Science</h2>
+                <p>Master data analysis and machine learning.</p>
+            </div>
+            <div class="course-card">
+                <h2>Digital Marketing</h2>
+                <p>Understand modern marketing strategies and tools.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.menu-icon').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
